@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB"> 
+	<head  profile="http://dublincore.org/documents/dcq-html/"> 
+		
+		<title>Status Stream</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+		<script src="/static/js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/jquery.history.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js/base.js" type="text/javascript" charset="utf-8"></script>
+		
+		<meta property="og:title" content="Status Stream"/> 
+		<meta property="og:site_name" content="Status Stream"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://statusstream.appspot.com"/>
+		<meta property="og:image" content="http://statusstream.appspot.com/static/img/radar.png"/>
+		<meta property="fb:admins" content="605665581"/>
+		<meta property="fb:app_id" content="132789103436560"/>
+		
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-18961792-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+</head> 
+	<body> 
+		<h1>Status Stream</h1>
+		<h2>Who's saying what, in realtime, on Facebook</h2>
+		<a id="show_help" href="#">Help</a>
+		<div id="fblike">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fstatusstream.appspot.com&amp;layout=standard&amp;show_faces=false&amp;width=650&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:650px; height:80px;" allowTransparency="true"></iframe>
+		</div>
+		
+		<div id="help">
+			<h3>What's This?</h3>
+			<a id="close" href="#">Close</a>
+			<p>Status Stream lets you search Facebook for public status updates about, well, anything.
+				You'll see realtime updates from people all over the world who are talking
+				about whatever you're searching for.</p>
+			<p>You can search for one thing, or several things. Just add your search terms
+				after the '#' in the URL - and separate each with a '|' (pipe) character.</p>
+			<p>
+				<form id="searchform">
+					<input id="searchquery" type="search" /><input type="submit" value="Get Stream" />
+				</form>
+			</p>
+			<p>Can't think of anything? try these:
+				<ul>
+					<li><a href="#the+simpsons|family+guy|south+park">The Simpsons OR Family Guy OR South Park</a></li>
+					<li><a href="#barack+obama">Barack Obama</a></li>
+					<li><a href="#facebook">Facebook</a></li>
+					<li><a href="#love">Love</a></li>
+					<li><a href="#london">London</a></li>
+					<li><a href="#fail">Fail</a></li>
+					<li><a href="#listening+to">I'm Listening to...</a></li>
+				</ul>
+			</p>
+			<p class="credits">A 3 hour hack by <a href="http://www.facebook.com/sicross">Simon Cross</a>.</p>
+		</div>
+		
+		<ol id="stream">
+			
+		</ol>
+		<div style="background:red" id="heighttest"></div>
+		
+	</body> 
+</html>
